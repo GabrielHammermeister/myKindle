@@ -4,113 +4,198 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyKindle2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
     <link rel="stylesheet" href="app.css">
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous"> -->
-
-
-    <title>My Kindle</title>
 </head>
 
-<body>
+<body class="bg-dark bg-gradient">
 
-    <nav class="vertical-nav">
-        <nav class="navigation">
-            <section class="routes">
-                <a href="/#">Library</a>
-                <a href="/#">Store</a>
-                <a href="/#">Configuration</a>
-            </section>
-        </nav>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark shadow-sm fixed-top" style="height: 10vh;">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">
+                <img src="./icons/Amazon-Kindle-icon.png" class="d-inline-block align-center" id="brand-icon">
+                My Kindle
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Library</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Store</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Vocabulary</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
     </nav>
 
-    <main>
-        <header class="header">
-            <section class="resume">
-                <h1>Recente Readi</h1>
-                <div class="books">
-                    <div>
-                        <img src="./images/conto_da_aia.jpg">
-                    </div>
-                    <div>
-                        <img src="./images/home_babilonia.jpg">
-                    </div>
-                    <div>
-                        <img src="./images/revolucao_dos_bixos.jpg">
-                    </div>
-                </div>
-            </section>
-        </header>
-    
-        <section class="current-reading">
-    
-            <aside class="book-text">
-                <div class="book-content">
-                    <h1>Tyrion</h1>
-                    <p>The north went on forever.</p>
-    
-                    <p>Tyrion Lannister knew the maps as well as anyone, but a fortnight on the wild track that passed for
-                        the
-                        kingsroad up here had brought home the lesson that the map was one thing and the land quite another.
-                    </p>
-                    <p>
-                        They had left Winterfell on the same day as the king, amidst all the commotion of the royal
-                        departure,
-                        riding out to the sound of men shouting and horses snorting, to the rattle of wagons and the
-                        groaning of
-                        the queen's huge wheelhouse, as a light snow flurried about them. The kingsroad was just beyond the
-                        sprawl of castle and town. There the banners and the wagons and the columns of knights and
-                        freeriders
-                        turned south, taking the tumult with them, while Tyrion turned north with Benjen Stark and his
-                        nephew.
-                    </p>
-                    <p>It had grown colder after that, and far more quiet.</p>
-                    <p> West of the road were flint hills, grey and rugged, with tall watchtowers on their stony summits. To
-                        the
-                        east the land was lower, the ground flattening to a rolling plain that stretched away as far as the
-                        eye
-                        could see. Stone bridges spanned swift, narrow rivers, while small farms spread in rings around
-                        holdfasts
-                        walled in wood and stone. The road was well trafficked, and at night for their comfort there were
-                        rude
-                        inns
-                        to be found.</p>
-    
-                    <p>Three days ride from Winterfell, however, the farmland gave way to dense wood, and the kingsroad grew
-                        lonely. The flint hills rose higher and wilder with each passing mile, until by the fifth day they
-                        had
-                        turned into mountains, cold blue-grey giants with jagged promontories and snow on their shoulders.
-                        When
-                        the
-                        wind blew from the north, long plumes of ice crystals flew from the high peaks like banners.</p>
-                </div>
-            </aside>
-            <aside class="book-info">
-                <div class="info">
-                    <div class="div-img">
-                        <img src="./images/gameofthrones.jpg">
-                    </div>
-                    <div class="div-title">
-                        <h2>Game of Thrones</h2>
-                        <h3>A song of Ice and Fire: book one</h3>
-                    </div>
-                </div>
-                <div class="footer">
-                    <button>Continue</button>
-                </div>
-            </aside>
-    
-        </section>
-    </main>
+    <div class="container" id="recent-reading" style="height: 100vh;">
+        <div class="row shadow-lg border-bottom border-dark" style="position: relative; min-height: 60vh;">
+            <div class="row">
+                <div class="col ms-4">
 
-    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+                    <h3 class="text-white" style="margin: 25px 0px 25px 5px;">Recent Reading</h3>
+
+                </div>
+            </div>
+
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3" style="margin: 0px 0px;padding: 0px 0px;"
+                id="last-book-list">
+
+                <div class="col mb-5 ms-4 p-0" style="max-width: 14rem;">
+
+                    <div class="card mx-auto shadow rounded-0 border-top-0 border-bottom-0 border-1 border-light h-100"
+                        style="max-width: 12rem;">
+
+                        <img src="./images/conto_da_aia.jpg" class="card-img-top">
+                        <div class="card-body bg-dark text-white">
+                            <h5 class="card-title">O conto da aia</h5>
+                            <h6 class="card-subititle text-muted">Margaret Atwood</h6>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col mb-5 ms-4 p-0" style="max-width: 14rem;">
+
+                    <div class="card mx-auto shadow rounded-0 border-top-0 border-bottom-0 border-1 border-light h-100"
+                        style="max-width: 12rem;">
+
+                        <img src="./images/home_babilonia.jpg" class="card-img-top">
+                        <div class="card-body bg-dark text-white">
+                            <h5 class="card-title">O homem mais rico da Babilônia</h5>
+                            <h6 class="card-subititle text-muted">George S. Clason</h6>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col mb-5 ms-4 p-0" style="max-width: 14rem;">
+
+                    <div class="card mx-auto shadow rounded-0 border-top-0 border-bottom-0 border-1 border-light h-100"
+                        style="max-width: 12rem;">
+
+                        <img src="./images/revolucao_dos_bixos.jpg" class="card-img-top">
+                        <div class="card-body bg-dark text-white">
+                            <h5 class="card-title">A Revolução dos bixos</h5>
+                            <h6 class="card-subititle text-muted">George Orwell</h6>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row" style="height: 40vh;">
+            <div class="col overflow-auto" style="background-color:#D4B595; text-align: justify;height: 40vh;">
+
+                <p>
+
+                <h1>Title</h1>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt hic harum autem molestias quidem enim
+                unde vitae quia voluptatem perspiciatis voluptatibus tenetur a officia, id, odio tempore consectetur
+                est. Ex.
+                Laudantium voluptatum consequatur, earum ipsam illum officiis blanditiis. Possimus enim, libero eum
+                autem nihil, aut nam veniam asperiores ut eaque ex expedita voluptates rem vero error facilis culpa
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, ab quidem. Autem sed quas
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem dicta sit quisquam id quibusdam
+                consequatur corporis inventore ipsum. Exercitationem asperiores veritatis, dolorem animi similique
+                adipisci alias. Architecto illum sit doloremque.
+                Rem, placeat. Error fugit ea quia sapiente quaerat distinctio doloribus consequatur, dignissimos
+                voluptas amet consectetur atque, deserunt cumque veniam illum. Odio, consequatur maiores doloribus
+                eum recusandae itaque magni expedita fugit!
+                Quod alias quos excepturi! Dolorum ex ad magni fugit rem exercitationem, incidunt beatae rerum
+                delectus sequi facilis dicta debitis, sed doloribus cumque officia voluptas at hic nulla optio.
+                Recusandae, laudantium.
+                Ducimus reiciendis repellat qui accusamus ad porro beatae, ipsa rem architecto sapiente corrupti
+                temporibus laboriosam atque dolorum quae aut possimus similique repudiandae earum nesciunt tempore
+                aliquam officia dolore! Enim, nulla!
+                Rerum impedit porro dolor quas accusantium animi, necessitatibus corrupti unde debitis odio ad. Nisi
+                illo qui mollitia doloremque consectetur voluptates tenetur tempora. Adipisci, incidunt a dolores
+                perferendis accusamus laudantium laboriosam?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. A eum itaque placeat at facere neque, quia
+                optio inventore, qui necessitatibus numquam. Cupiditate expedita rem fugit pariatur excepturi nam
+                delectus temporibus?
+                In commodi consectetur sequi cum delectus. Rem cum repudiandae tempore, ullam asperiores dolorum
+                placeat. Fuga eligendi repellat a suscipit expedita iusto, quod officiis magnam consectetur
+                necessitatibus, ea assumenda, sed molestias.
+                Accusantium, perspiciatis illum. Dolorum minima vitae, minus quis sed dicta corporis hic explicabo
+                consectetur mollitia impedit fuga commodi quae quidem nam quam blanditiis dolore reiciendis illo quia
+                voluptatem? Asperiores, inventore!
+                Omnis corrupti, dolorum nam ullam tempora modi voluptatibus perferendis at eligendi quo accusamus aut
+                laudantium ducimus, repellat placeat. Ut natus debitis in non iusto, quae repellat alias voluptatum.
+                Quam, velit.
+                Officiis at delectus eos est saepe eveniet, quae iure a dicta fuga assumenda, voluptate porro in ipsa
+                architecto harum reiciendis, magni maiores blanditiis. Quaerat, autem nostrum unde et atque tenetur.
+                </p>
+
+            </div>
+            <div class="col" style="background: #313131;min-height: 40vh;">
+                <div class="row" style="min-height: 60%;">
+                    <div class="card rounded-0 p-0 border-0 text-white" style="background: #313131;">
+                        <div class="row g-0 row-cols-1 row-cols-md-2">
+                            <div class="col p-3 pb-0" style="max-width: 12rem;">
+                                <img src="./images/gameofthrones.jpg" class="img-fluid">
+                            </div>
+
+                            <div class="col">
+                                <div class="card-body pb-0">
+                                    <h3 class="card-title">Game of Thrones</h4>
+                                        <h4 class="card-subtitle mb-3">A song of Ice and Fire</h5>
+                                            <h5 class="text-muted">Last markup:
+                                    </h3>
+                                    <p class="card-text lead">"When the wind blew from the north, long plumes of
+                                        ice crystals flew from the high peaks like banners."</p>
+                                    <p class="card-text"><small class="text-muted">Last read 15 mins ago</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row" style="min-height: 40%;">
+                    <div class="col p-0 d-flex justify-content-end align-items-end" style="background: #313131;">
+                        <button type="button"
+                            class="btn me-3 mb-3 btn-lg text-white btn-outline-dark border-light d-inline rounded-0 h-50">Continue</button>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
         integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
         integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
-        crossorigin="anonymous"></script> -->
-
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

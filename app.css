@@ -1,220 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;500;600&family=Nunito:wght@300;400;600&display=swap');
 
-body {
-    display: flex;
+body, html {
+
+    height: 100%;
     margin: 0;
+
     font-family: "Nunito", sans-serif;
 }
 
-* {
-    box-sizing: border-box;
+#brand-icon {
+    height: 40px;
+    width: 40px;
 }
 
-h1 {
-    font-size: 3rem;
-}
-h2 {
-    font-size: 2rem;
-}
-
-.header {
-    height: 49vh;
-}
-
-.vertical-nav{
-
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-
-    background-color: #414141;
-    width: 100%;
-    max-width: 30vh;
-}
-
-.navigation {
-    
-    width: 100%;
-}
-.navigation a{
-    font-size: 1.5rem;
-
-    display: block;
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    
-    padding: 35px 0px 35px 30px;
-
-    border-top: 1px solid #525252;
-}
-
-.navigation a:hover{
-    background-color: #222222;
-}
-
-.routes{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-}
-
-.routes div{
-    display: flex;
-    justify-content: center;
-}
-
-.resume {
+#recent-reading {
     background-color: #525252;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
 }
 
-.resume h1 {
-    margin: 0px;
-    padding: 0px;
+/* 
+@media (min-width: 576px) {
+    #text-preview {
+        height: 200px;
+    }
 }
 
-.resume img {
-    width: 100%;
-    max-height: 400px;
+@media (min-width: 576px) {
+    #text-preview {
+        height: 51px;
+    }
 }
 
-.header {
-    width: 100%;
-    display: flex;
+@media (min-width: 576px) {
+    #text-preview {
+        height: 51px;
+    }
 }
 
-.books {
-    display: flex;
-    height: 100%;
-}
-
-.books img {
-    height: 100%;
-    max-width: 100%;
-}
-
-.books div {
-    margin: 10px;
-    height: 100%;
-}
-
-.current-reading {
-    display: flex;
-    height: 51vh;
-}
-
-.book-text {
-    background-color: #D4B595;
-    width: 60%;
-    padding: 0px 90px;
-
-    font-family: 'Bodoni Moda', serif;
-}
-
-.book-text p {
-
-    font-size: 20px;
-    
-    color: black;
-    text-align: justify;
-}
-
-
-.book-text .book-content {
-    overflow: auto;
-    height: 49vh;
-}
-
-/* width */
-::-webkit-scrollbar {
-    width: 8px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: none;
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #525252;
-    border-radius: 5px;
-  }
-
-  ::-webkit-resize {
-    background: #525252;
-    border-radius: 5px;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #323232;
-  }
-
-.book-text h1 {
-    margin: 30px 0px 20px 0px;
-    color: black;
-}
-
-
-.book-info {
-    display: flex;
-    flex-direction: column;
-    width: 40%;
-    background-color: #313131;
-    justify-content: space-between;
-}
-
-.book-info .div-img {
-    width: 30%;
-    margin: 50px;
-}
-
-.book-info .div-title {
-    color: white;
-    margin: 50px 30px 0px 0px;
-}
-
-.book-info .div-img img{
-    width: 100%;
-    
-    height: 100%;
-    /* max-height: 300px;
-    min-height: 200px;
-
-    max-width: 200px;
-    min-width: 150px; */
-}
-
-.book-info .info {
-    display: flex;
-    height: fit-content;
-}
-
-.book-info .footer {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-
-    max-height: 100%;
-}
-.book-info .footer button{
-
-    font-size: 1.2rem;
-
-    margin: 0px 40px 40px 0px;
-    background-color: #323232;
-    padding: 10px 30px;
-    color: white;
-    border: 1px solid white;
-}
-.book-info .footer button:hover{
-    background-color: #242424;
-    transform: translateY(-1px);
-
-}
+@media (min-width: 576px) {
+    #text-preview {
+        height: 51px;
+    }
+} */
